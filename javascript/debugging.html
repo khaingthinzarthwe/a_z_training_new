@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging</title>
+</head>
+<body>
+    <input type="text">
+    <label></label>
+    <script>
+        console.log("JavaScript working")
+        document.querySelector("input").onkeyup = function() {
+            console.log("Keyup working")
+            let count = document.querySelector("input").value.length
+            if(count) {
+                console.log("Inside if block")
+                document.querySelector("label").textContent = count
+            }
+        }
+    </script>
+</body>
+</html>

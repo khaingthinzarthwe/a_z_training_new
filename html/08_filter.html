@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 1000px;
+        }
+        .container img{
+            width: 300px;
+        }
+        .filtertest1{
+            filter: blur(3px);
+            transition: 0.5s;
+        }
+        .filtertest1:hover{
+            filter: blur(0px);
+        }
+        .filtertest2:hover{
+            filter: drop-shadow(16px 16px 20px rgb(109, 110, 36));
+            transition: 0.5s;
+        }
+        .filtertest3:hover{
+            filter: contrast(200%);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="filtertest1" src="../img/flower1.jpg">
+        <img class="filtertest2" src="../img/flower2.jpg">
+        <img class="filtertest3" src="../img/flower3.jpg">
+    </div>
+</body>
+</html>

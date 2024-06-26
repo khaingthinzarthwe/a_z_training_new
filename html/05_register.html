@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(78, 4, 78);
+            height: 1000px;
+        }
+        .content{
+            background-color: white;
+            width: 400px;
+            margin: auto;
+            margin-top: 200px;
+            border-radius: 8px;
+        }
+        label{
+            display: block;
+            margin: 0px 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .title{
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 25px;
+        }
+        .user-input{
+            width: 80%;
+            padding: 5px 10px;
+            margin: 0px 20px;
+            border-radius: 2px;
+            border: 1px solid rgb(78, 4, 78);
+        }
+        .checkbox-group{
+            margin: 0px 20px;
+            margin-top: 10px;
+        }
+        .checkbox-group span{
+            color: rgb(78, 4, 78);
+        }
+        .button-group{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .button-group button{
+            width: 88%;
+            padding: 10px 10px;
+            margin: 0px 20px;
+            border: none;
+            text-align: center;
+            background-color: rgb(78, 4, 78);
+            color: white;
+        }
+        .footer-text{
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .footer-text span{
+            color: rgb(78, 4, 78);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Sign Up</div>
+        <div class="input-group">
+            <label for="">Username:</label>
+            <input type="text" class="user-input">
+        </div>
+        <div class="input-group">
+            <label for="">Email:</label>
+            <input type="email" class="user-input">
+        </div>
+        <div class="input-group">
+            <label for="">Password:</label>
+            <input type="password" class="user-input">
+        </div>
+        <div class="input-group">
+            <label for="">Password Again:</label>
+            <input type="password" class="user-input">
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox">I agree with <span>the term of services</span>
+        </div>
+        <div class="button-group">
+            <button>Register</button>
+        </div>
+        <div class="footer-text">Already a member?<span>Login Here</span></div>
+    </div>
+</body>
+</html>

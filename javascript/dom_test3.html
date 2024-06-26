@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <p id="note">
+        Hello World
+    </p>
+    <!-- HTML Event Attribute -->
+    <!-- <button onClick="hello()">Button</button> -->
+    <!-- addEventListener() -->
+    <!-- <button>Button</button> -->
+    <!-- property start with on -->
+    <button>Button</button>
+</body>
+<!-- HTML Event Attribute -->
+<!-- <script>
+    function hello() {
+        document.querySelector("#note").textContent = "Hello Event"
+    }
+</script> -->
+
+<!-- addEventListener() -->
+<!-- <script>
+    document.querySelector("button").addEventListener("click", e => {
+        document.querySelector("#note").textContent = "Hello Event"
+    })
+</script> -->
+<!-- property start with on -->
+<script>
+    document.querySelector("button").onclick = function(e) {
+        document.querySelector("#note").textContent = "Hello Event"
+    }
+</script>
+</html>

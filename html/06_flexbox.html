@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox and Table</title>
+    <!-- it dosen't work -->
+    <style>
+        body{
+            height: 1000px;
+            margin: 0;
+            padding: 0;
+        }
+        /* .container{
+            background-color: black;
+            display: flex;
+            horizontal
+            justify-content: center;
+            vertical
+            height: 300px;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+        }
+        .para{
+            width: 200px;
+            height: 100px;
+            background-color: moccasin;
+            margin: 10px;
+        }
+        .top{
+            align-self: flex-start;
+        }
+        .center{
+            align-self: center;
+        }
+        .bottom{
+            align-self: flex-end;
+        } */
+        .container{
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+        }
+        .table{
+            width: 60%;
+            text-align: left;
+            border-collapse: collapse;
+            border: 1px solid #04AA6D;
+        }
+        #header{
+            background-color: #04AA6D;
+            color: white;
+        }
+        .table tr, .table th, .table td{
+            padding: 10px 15px;
+            /* border: 1px solid black; */
+        }
+        .table tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+        .table tr:hover{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>FlexBox & Table</h1>
+    <!-- <div class="container">
+        <div class="para top">First Love</div>
+        <div class="para center">Strong Girl Gam Nam Soon</div>
+        <div class="para bottom">Arthdal Chronicles 2</div>
+        <div class="para top">Yound Sheldon 2</div>
+        <div class="para center">First Love</div>
+        <div class="para bottom">Strong Girl Gam Nam Soon</div>
+        <div class="para top">Arthdal Chronicles 2</div>
+        <div class="para bottom">Yound Sheldon 2</div>
+    </div><hr> -->
+    <div class="container">
+        <table class="table">
+            
+                <tr id="header">
+                    <th>No</th>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Episode</th>
+                </tr>
+            
+            
+                <tr>
+                    <td>1</td>
+                    <td>Lee Dona</td>
+                    <td>2023</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Moving</td>
+                    <td>2023</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Twenty Five Twenty One</td>
+                    <td>2022</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Extraordinary Attorney Woo</td>
+                    <td>2022</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Our Beloved Summer</td>
+                    <td>2021</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>The Red Sleeve</td>
+                    <td>2021</td>
+                    <td>17</td>
+                </tr>
+            
+        </table>
+    </div>
+</body>
+</html>

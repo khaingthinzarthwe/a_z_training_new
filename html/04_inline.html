@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class & Pseudo Element</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Charm&family=Dancing+Script&display=swap');
+        /* font-family: 'Charm', cursive;
+        font-family: 'Dancing Script', cursive; */
+
+        body{
+            background-color: aqua;
+            height: 1000px;
+        }
+        .content{
+            background-color: rgb(240, 222, 222);
+            width: 500px;
+            height: 400px;
+            text-align: center;
+            margin: auto;
+            margin-top: 200px;
+            border-radius: 20px;
+        }
+        .title::before{
+            content: "Kdrama::";
+            color: brown;
+        }
+        .title{
+            padding-top: 20px; 
+            font-size: 30px;
+            font-weight: bolder;
+            
+        }
+        .para{
+            padding: 10px 15px; 
+        }
+        p::first-line{
+            font-family: 'Charm', cursive;
+        }
+        .btn{
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 10px;
+        }
+        .btn:hover{
+            background-color: aquamarine;
+            color: black;
+            border: 1px solid black;
+            transition: 0.5s;
+        }
+        a:active{
+            color: brown;
+        }
+        .review{
+            margin-top: 15px;
+        }
+        .name{
+            border: none;
+            height: 20px;
+            border-radius: 8px;
+        }
+        .name:focus{
+            background-color: yellow;
+        }
+        i:hover{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Moving</div>
+        <p class="para">The quiet lives of three high school students with genetic superhuman abilities
+            turn upside down when a mysterious organization starts to hunt them down one by one.Kim Bong-Seok, 
+            Jang Hui-Soo and Lee Gang-Hoon attend the same high school. They look like ordinary students, 
+            but they have special abilities that they inherited from their parents. Kim Bong-Seok has the ability to fly. 
+            Jang Hui-Soo has excellent athletic abilities and she is able to rapidly recover from injuries, like being shot or stabbed.
+            Lee Gang-Hoon has uncanny power and speed.These three students try to hide their special abilities from other people, 
+            while their parents struggle to protect them from being used by other people.<a href="https://www.imdb.com/title/tt24640580/">see in imdb website</a>
+        </p>
+        <button class="btn">Read More</button>
+        <div class="review">
+            <input type="text" class="name" placeholder="send ur review">
+            <i class="fa-regular fa-paper-plane"></i>
+        </div>
+    </div>
+</body>
+</html>

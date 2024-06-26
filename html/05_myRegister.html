@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            height: 1000px;
+            background-color: rgba(255, 99, 71, 1);
+        }
+        .content{
+            width: 400px;
+            height: 500px;
+            background-color: white;
+            margin: auto;
+            margin-top: 200px;
+            border-radius: 5px;
+        }
+        .title{
+            padding-top: 30px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .input-group{
+            margin: 10px 15px;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .user-input{
+            width: 90%;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+        .user-checkbox{
+            margin: 10px 15px;
+        }
+        span{
+            font-weight: bold;
+        }
+        .register{
+            margin: 10px 15px;
+        }
+        .signUp{
+            width: 200px;
+            height: 30px;
+            border:none;
+            border-radius: 20px;
+            background-color: rgba(255, 99, 71, 1);
+        }
+        .signUp:hover{
+            background-color: rgba(255, 99, 71, 0.5);
+            transition: 0.5s;
+        }
+        .signIn{
+            margin-left: 30px;
+            border: none;
+            background-color: white;
+        }
+        i{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Sign Up</div>
+        <div class="input-group">
+            <label>Full Name</label>
+            <input type="text" placeholder="Name..." class="user-input">
+        </div>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Email address..." class="user-input">
+        </div>
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" placeholder="Username..." class="user-input">
+        </div>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="********" class="user-input">
+        </div>
+        <div class="input-group">
+            <label>Repeat Password</label>
+            <input type="password" placeholder="********" class="user-input">
+        </div>
+        <input type="checkbox" class="user-checkbox">I agree to the <span>Terms of User</span>
+        <div class="register">
+            <button class="signUp">Sign Up</button>
+            <button class="signIn">Sign In<i class="fa-solid fa-arrow-right-long"></i></button>
+        </div>
+    </div>
+</body>
+</html>

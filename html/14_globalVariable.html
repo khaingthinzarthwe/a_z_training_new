@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Global Variable</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+            --background-light:white;
+            --background-dark:black;
+            --text-light:white;
+            --text-dark:black;
+        }
+        body{
+            background-color: bisque;
+        }
+        .light-btn{
+            background-color: cyan;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+        }
+        .light-btn:focus{
+            background-color: var(--background-light);  
+        }
+        .dark-btn{
+            background-color: burlywood;
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 20px;
+        }
+        .dark-btn:focus{
+            background-color: var(--background-dark);
+            color: var(--text-light);
+        }
+    </style>
+</head>
+<body>
+    <button class="light-btn"><i class="fa-solid fa-toggle-on"></i>Light Mode</button>
+    <button class="dark-btn"><i class="fa-solid fa-toggle-off"></i>Dark Mode</button>
+    <h1>Welcome from my world</h1>
+</body>
+</html>

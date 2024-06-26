@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Properties & Methods</title>
+</head>
+<body>
+    <div id="box1">
+        Box One Content
+    </div>
+    <div id="box2">
+        Box Two Content
+    </div>
+    <div id="box">
+        An Element.
+    </div>
+</body>
+<script>
+    // document.querySelector("#box1").textContent = "Hello <b>DOM</b>"
+    // document.querySelector("#box2").innerHTML = "Hello <b>DOM</b>"
+    // let hello = document.createTextNode("Hello DOM.")
+    // document.querySelector("#box").appendChild(hello)
+    // let hello = document.createElement("b")
+    // hello.textContent = "Hello DOM."
+    // document.querySelector("#box").appendChild(hello)
+    // let div = document.querySelector("div")
+    // div.insertBefore(hello, div.firstChild)
+    // document.querySelector("div").remove()
+    let hello = document.createElement("b")
+    hello.textContent = "Hello DOM."
+    hello.setAttribute("title", "A new element")
+    document.querySelector("div").appendChild(hello)
+</script>
+</html>

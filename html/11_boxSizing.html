@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing & Min-Width</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .content{
+            width: 200px;
+            height: 200px;
+            border: 5px solid black;
+        }
+        .min{
+            margin-top: 10px;
+            width: 200px;
+            min-height: 200px;
+            border: 5px solid purple;
+            /* overflow: scroll; */
+        }
+    </style>
+</head>
+<body>
+    <div class="content"></div>
+    <div class="min">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit qui animi hic itaque. Saepe assumenda cupiditate voluptates, qui accusamus accusantium earum ut explicabo facilis id corporis aperiam, labore necessitatibus sed.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis natus possimus nisi adipisci beatae dignissimos, nostrum modi eos expedita cumque, maxime accusamus exercitationem, dolor aspernatur magni velit laudantium sit officiis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio iusto eius, quas rem eligendi pariatur, excepturi quia aperiam consectetur sapiente, placeat voluptatibus modi autem esse amet repellendus id facere!
+    </div>
+</body>
+</html>

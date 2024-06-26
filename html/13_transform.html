@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Properties</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: antiquewhite;
+    }
+    .content{
+        display:flex;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        width: 50%;
+        transition: 0.5s;
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px grey;
+    }
+    img:hover{
+        /* transform: translate(120px,120px); */
+        /* transform: scale(2); */
+        /* filter: brightness(1.3); */
+        /* transform: skew(30deg, 20deg); */
+        transform:scale(1.2) rotate(5deg);
+        /* filter: drop-shadow(16px 16px 20px #4e4c4c); */
+    }
+    h1{
+        font-size: 30px;
+        margin-top: 20px;
+        text-shadow: 8px 8px 15px grey;
+    }
+</style>
+<body>
+    <div class="content">
+        <img src="../img/ig4.jpg" alt="My Mister">
+        <h1>My Mister</h1>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Page</title>
+    <style>
+        .container{
+            background-color: rebeccapurple;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            font-size: 60px;
+        }
+        @media(max-width:1080px){
+            .container{
+                background-color: red;
+            }
+        }
+        @media(max-width:700px){
+            .container{
+                background-color: green;
+            }
+        }
+        @media(max-width:400px){
+            .container{
+                background-color: blue;
+            }
+        }
+        @media(max-width:320px){
+            .container{
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">Hello World</div>
+</body>
+</html>
